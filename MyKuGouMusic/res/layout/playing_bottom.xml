@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:background="#ccffffff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="center_vertical"
+     >
+     
+    
+    <ImageButton 
+        android:id="@+id/btnMode_playing_bottom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_title_btn_bg"
+        android:src="@drawable/selector_btn_mode_normal_playing_bottom"
+        />
+    <ImageButton 
+        android:id="@+id/btnPre_playing_bottom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_title_btn_bg"
+        android:src="@drawable/selector_btn_pre_playing_bottom"
+        />
+    <ImageButton 
+        android:id="@+id/btnPlay_playing_bottom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_title_btn_bg"
+        android:src="@drawable/selector_btn_play_playing_bottom"
+        />
+    <ImageButton 
+        android:id="@+id/btnNext_playing_bottom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_title_btn_bg"
+        android:src="@drawable/selector_btn_next_playing_bottom"
+        />
+    <ImageButton 
+        android:id="@+id/btnMore_playing_bottom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_title_btn_bg"
+        android:src="@drawable/selector_btn_menu_playing_bottom"
+        />
+
+</LinearLayout>

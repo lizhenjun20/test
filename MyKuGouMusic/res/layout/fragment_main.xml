@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <include layout="@layout/title_main_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_search_bg_main" 
+        >
+
+        <ImageButton
+            android:id="@+id/btnSearch_fragment_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/selector_btn_next_bg"
+            android:src="@drawable/common_title_search_button_pressed" />
+
+        <View
+            android:id="@+id/line_fragment_main"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSearch_fragment_main"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btnClear_fragment_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/line_fragment_main"
+            android:background="#00000000"
+            android:src="@drawable/selector_btn_clear_fragment_main"
+            android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/btnClear_fragment_main"
+            android:background="#00000000"
+            android:hint="说好的幸福呢"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_layout_bg_fragment_main"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutGotoLocalMusic_fragment_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_btn_next_bg"
+                    android:clickable="true" >
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_btn_next_bg"
+                        android:src="@drawable/ic_navigation_discovery" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本地音乐"
+                            android:textColor="#aa000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="171首"
+                            android:textColor="#99444444"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#aa444444" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btnFav_fragment_main"
+                        style="@style/btn_style_fav"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/selector_fav_iv_fragment_main"
+                        android:text="我喜欢" />
+
+                    <TextView
+                        android:id="@+id/btnMusicList_fragment_main"
+                        style="@style/btn_style_fav"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/selector_musiclist_iv_fragment_main"
+                        android:text="我的歌单" />
+
+                    <TextView
+                        android:id="@+id/btnDownloadManager_fragment_main"
+                        style="@style/btn_style_fav"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/selector_download_manager_iv_fragment_main"
+                        android:text="下载管理" />
+
+                    <TextView
+                        android:id="@+id/btnRecentlylay_fragment_main"
+                        style="@style/btn_style_fav"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/selector_recentlay_play_iv_fragment_main"
+                        android:text="最近播放" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
